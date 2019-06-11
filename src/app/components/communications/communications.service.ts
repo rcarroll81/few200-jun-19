@@ -2,10 +2,11 @@ import { BehaviorSubject, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 
 export class CommunicationsService {
+
   private message = 'default';
 
   private subject = new BehaviorSubject<string>('some default value');
-  function: (x: string) => string; ): getMessage() {
+  getMessage() {
     return this.message;
   }
 
@@ -23,7 +24,8 @@ export class CommunicationsService {
       map(func)
     );
   }
-  export const selectMessageAsUpper = (x: string) => x.toUpperCase();
-
-  export const selectMessageAsLower = (x: string) => x.toLowerCase();
 }
+
+export const selectMessageAsUpper = (x: string) => x.toUpperCase();
+
+export const selectMessageAsLower = (x: string) => x.toLowerCase();
