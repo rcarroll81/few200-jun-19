@@ -20,6 +20,7 @@ import { reducers } from './reducers';
 import { CounterComponent } from './components/counter/counter.component';
 import { EffectsModule } from '@ngrx/effects';
 import { CounterEffects } from './effects/counter.effects';
+import { ShoppingComponent } from './features/shopping/shopping.component';
 
 @NgModule({
   declarations: [
@@ -32,7 +33,8 @@ import { CounterEffects } from './effects/counter.effects';
     CommunicationsComponent,
     LhsComponent,
     RhsComponent,
-    CounterComponent
+    CounterComponent,
+    ShoppingComponent
   ],
   imports: [
     BrowserModule,
